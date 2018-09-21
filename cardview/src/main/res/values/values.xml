@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yc_cardview_dark_background">#FF424242</color>
+    <color name="yc_cardview_light_background">#FFFFFFFF</color>
+    <!--<color name="yc_cardview_shadow_end_color">#03000000</color>-->
+    <color name="yc_cardview_shadow_end_color">#00ffffff</color>
+    <color name="yc_cardview_shadow_start_color">#37000000</color>
+    <declare-styleable name="YcCardView">
+        <attr name="ycCardBackgroundColor" format="color"/>
+        <attr name="ycCardCornerRadius" format="dimension"/>
+        <attr name="ycCardElevation" format="dimension"/>
+        <attr name="ycCardMaxElevation" format="dimension"/>
+        <attr name="ycCardUseCompatPadding" format="boolean"/>
+        <attr name="ycCardPreventCornerOverlap" format="boolean"/>
+        <attr name="ycContentPadding" format="dimension"/>
+        <attr name="ycContentPaddingLeft" format="dimension"/>
+        <attr name="ycContentPaddingRight" format="dimension"/>
+        <attr name="ycContentPaddingTop" format="dimension"/>
+        <attr name="contentPaddingBottom" format="dimension"/>
+        <attr name="android:minWidth"/>
+        <attr name="android:minHeight"/>
+
+        <attr name="ycStartShadowColor" format="color"/>
+        <attr name="ycEndShadowColor" format="color"/>
+    </declare-styleable>
+    <dimen name="yc_cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="yc_cardview_default_elevation">2dp</dimen>
+    <dimen name="yc_cardview_default_radius">2dp</dimen>
+
+    <style name="Base.YcCardView" parent="android:Widget">
+        <item name="ycCardCornerRadius">@dimen/yc_cardview_default_radius</item>
+        <item name="ycCardElevation">@dimen/yc_cardview_default_elevation</item>
+        <item name="ycCardMaxElevation">@dimen/yc_cardview_default_elevation</item>
+        <item name="ycCardUseCompatPadding">false</item>
+        <item name="ycCardPreventCornerOverlap">true</item>
+    </style>
+
+    <style name="YcCardView" parent="Base.YcCardView">
+    </style>
+
+    <style name="YcCardView.Dark">
+        <item name="ycCardBackgroundColor">@color/yc_cardview_dark_background</item>
+    </style>
+
+    <style name="YcCardView.Light">
+        <item name="ycCardBackgroundColor">@color/yc_cardview_light_background</item>
+    </style>
+</resources>
