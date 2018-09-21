@@ -8,11 +8,96 @@
     android:orientation="vertical"
     tools:context="com.zyp.cardview.demo.MainActivity">
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@drawable/state_list_animator"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="Hello World!"/>
+    </android.support.v7.widget.CardView>
+
+
+    <com.zyp.cardview.YcCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:ycCardCornerRadius="5dp"
+        app:ycCardElevation="5dp"
+        app:ycCardMaxElevation="5dp"
+        app:ycCardPreventCornerOverlap="true"
+        app:ycStartShadowColor="@color/red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Hello World!"/>
+    </com.zyp.cardview.YcCardView>
 
     <com.zyp.cardview.YcCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        app:ycCardCornerRadius="5dp"
+        app:ycCardElevation="5dp"
+        app:ycCardMaxElevation="5dp"
+        app:ycCardPreventCornerOverlap="false"
+        app:ycStartShadowColor="@color/red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Hello World!"/>
+    </com.zyp.cardview.YcCardView>
+
+    <com.zyp.cardview.YcCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:ycCardCornerRadius="5dp"
+        app:ycCardElevation="5dp"
+        app:ycCardMaxElevation="5dp"
+        app:ycCardPreventCornerOverlap="false"
+        app:ycStartShadowColor="@color/red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_selected"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Hello World!"/>
+    </com.zyp.cardview.YcCardView>
+
+
+    <com.zyp.cardview.YcCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:foreground="@drawable/click_indicator_light"
+        android:stateListAnimator="@drawable/state_list_animator"
         app:ycCardBackgroundColor="@color/red"
         app:ycCardCornerRadius="5dp"
         app:ycCardElevation="5dp"
@@ -20,50 +105,13 @@
         app:ycCardPreventCornerOverlap="false"
         app:ycStartShadowColor="@color/red">
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@null"
-            android:text="Hello World!"
-            />
-    </com.zyp.cardview.YcCardView>
-
-    <com.zyp.cardview.YcCardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        app:ycCardBackgroundColor="@color/gold"
-        app:ycCardCornerRadius="5dp"
-        app:ycCardElevation="5dp"
-        app:ycCardMaxElevation="5dp"
-        app:ycCardPreventCornerOverlap="false"
-        app:ycStartShadowColor="@color/gold">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@null"
-            android:text="Hello World!"
-            />
+            android:gravity="center"
+            android:text="Hello World!"/>
     </com.zyp.cardview.YcCardView>
 
 
-    <com.zyp.cardview.YcCardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        app:ycCardBackgroundColor="@color/green"
-        app:ycCardCornerRadius="5dp"
-        app:ycCardElevation="5dp"
-        app:ycCardMaxElevation="5dp"
-        app:ycCardPreventCornerOverlap="false"
-        app:ycStartShadowColor="@color/green">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@null"
-            android:text="Hello World!"
-            />
-    </com.zyp.cardview.YcCardView>
 </LinearLayout>

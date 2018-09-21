@@ -147,6 +147,10 @@
     <color name="navy">#000080</color> <!-- 海军色 -->
     <color name="black">#000000</color> <!-- 黑色 -->
 
+    <color name="dark_gray_click">#1f000000</color>
+    <color name="ripple_light">#1f000000</color>
+    <color name="transparent">#00000000</color>
+
     ---------------------
 
     本文来自 Fade龖龘 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/qq_36255612/article/details/53606305?utm_source=copy

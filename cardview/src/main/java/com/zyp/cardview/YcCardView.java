@@ -76,7 +76,7 @@ public class YcCardView extends FrameLayout {
 
     static {
 //        if (Build.VERSION.SDK_INT >= 21) {
-//            IMPL = new CardViewApi21();
+//            IMPL = new YcCardViewApi21();
 //        } else
         if (Build.VERSION.SDK_INT >= 17) {
             IMPL = new YcCardViewJellybeanMr1();
