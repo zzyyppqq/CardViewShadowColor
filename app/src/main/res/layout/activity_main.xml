@@ -54,12 +54,12 @@
     <com.zyp.cardview.YcCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         app:ycCardCornerRadius="5dp"
         app:ycCardElevation="5dp"
         app:ycCardMaxElevation="5dp"
         app:ycCardPreventCornerOverlap="false"
-        app:ycStartShadowColor="@color/red">
+        app:ycStartShadowColor="@color/lightsalmon">
 
         <TextView
             android:layout_width="match_parent"
@@ -79,7 +79,7 @@
         app:ycCardElevation="5dp"
         app:ycCardMaxElevation="5dp"
         app:ycCardPreventCornerOverlap="false"
-        app:ycStartShadowColor="@color/red">
+        app:ycStartShadowColor="@color/greenyellow">
 
         <TextView
             android:layout_width="match_parent"
