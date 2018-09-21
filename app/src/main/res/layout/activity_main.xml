@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,13 +7,16 @@
     android:orientation="vertical"
     tools:context="com.zyp.cardview.demo.MainActivity">
 
+    <!--android:foreground="@drawable/item_selector"  api>=21 ripper  api<21 selector-->
+    <!--android:stateListAnimator="@drawable/state_list_animator" 点击动画效果 支持api>=21-->
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:foreground="@drawable/item_selector"
         android:stateListAnimator="@drawable/state_list_animator"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="5dp"
@@ -27,17 +29,18 @@
             android:layout_height="60dp"
             android:background="@null"
             android:gravity="center"
-            android:text="Hello World!"/>
+            android:text="Hello World!" />
     </android.support.v7.widget.CardView>
 
-
+    <!--ripper的范围无法控制-->
     <com.zyp.cardview.YcCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:foreground="@drawable/item_selector"
+        android:stateListAnimator="@drawable/state_list_animator"
         app:ycCardCornerRadius="5dp"
         app:ycCardElevation="5dp"
         app:ycCardMaxElevation="5dp"
@@ -48,9 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="Hello World!"/>
+            android:text="Hello World!" />
     </com.zyp.cardview.YcCardView>
 
+    <!--子view实现ripper效果，但按下时四个边角不是圆角-->
     <com.zyp.cardview.YcCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,7 +72,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center"
-            android:text="Hello World!"/>
+            android:text="Hello World!" />
     </com.zyp.cardview.YcCardView>
 
     <com.zyp.cardview.YcCardView
@@ -84,11 +88,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@drawable/bg_selected"
+            android:background="@drawable/bg_round_rect_selector"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="Hello World!"/>
+            android:text="Hello World!" />
     </com.zyp.cardview.YcCardView>
 
 
@@ -96,7 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:foreground="@drawable/click_indicator_light"
+        android:foreground="@drawable/item_selector"
         android:stateListAnimator="@drawable/state_list_animator"
         app:ycCardBackgroundColor="@color/red"
         app:ycCardCornerRadius="5dp"
@@ -110,8 +114,7 @@
             android:layout_height="60dp"
             android:background="@null"
             android:gravity="center"
-            android:text="Hello World!"/>
+            android:text="Hello World!" />
     </com.zyp.cardview.YcCardView>
-
 
 </LinearLayout>

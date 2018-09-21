@@ -1,7 +1,12 @@
 package com.zyp.cardview.demo;
 
+import android.annotation.TargetApi;
+import android.graphics.Outline;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.ViewOutlineProvider;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,4 +16,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
 }

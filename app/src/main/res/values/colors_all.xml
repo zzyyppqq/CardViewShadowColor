@@ -147,8 +147,8 @@
     <color name="navy">#000080</color> <!-- 海军色 -->
     <color name="black">#000000</color> <!-- 黑色 -->
 
-    <color name="dark_gray_click">#1f000000</color>
-    <color name="ripple_light">#1f000000</color>
+    <color name="click_color">#1f000000</color>
+    <color name="ripple_color">#1f000000</color>
     <color name="transparent">#00000000</color>
 
     ---------------------
