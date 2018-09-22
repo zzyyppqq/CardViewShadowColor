@@ -57,17 +57,17 @@ import android.widget.FrameLayout;
  * shadow size is clamped by {@link #getMaxCardElevation()}. If you want to change elevation
  * dynamically, you should call {@link #setMaxCardElevation(float)} when CardView is initialized.
  *
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardBackgroundColor
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardCornerRadius
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardElevation
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardMaxElevation
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardUseCompatPadding
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardPreventCornerOverlap
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPadding
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingLeft
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingTop
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingRight
- * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingBottom
+ * ref com.zyp.cardview.R.styleable#YcCardView_cardBackgroundColor
+ * ref com.zyp.cardview.R.styleable#YcCardView_cardCornerRadius
+ * ref com.zyp.cardview.R.styleable#YcCardView_cardElevation
+ * ref com.zyp.cardview.R.styleable#YcCardView_cardMaxElevation
+ * ref com.zyp.cardview.R.styleable#YcCardView_cardUseCompatPadding
+ * ref com.zyp.cardview.R.styleable#YcCardView_cardPreventCornerOverlap
+ * ref com.zyp.cardview.R.styleable#YcCardView_contentPadding
+ * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingLeft
+ * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingTop
+ * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingRight
+ * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingBottom
  */
 public class YcCardView extends FrameLayout {
 
@@ -152,9 +152,9 @@ public class YcCardView extends FrameLayout {
      * Since setting this flag to true adds unnecessary gaps in the UI, default value is
      * <code>false</code>.
      *
-     * @param useCompatPadding <code>true></code> if CardView should add padding for the shadows on
+     * @param useCompatPadding <code>true</code> if CardView should add padding for the shadows on
      *                         platforms Lollipop and above.
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardUseCompatPadding
+     * ref com.zyp.cardview.R.styleable#YcCardView_ycCardUseCompatPadding
      */
     public void setUseCompatPadding(boolean useCompatPadding) {
         if (mCompatPadding != useCompatPadding) {
@@ -173,11 +173,11 @@ public class YcCardView extends FrameLayout {
      * @param top    The top padding in pixels
      * @param right  The right padding in pixels
      * @param bottom The bottom padding in pixels
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPadding
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingLeft
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingTop
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingRight
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_contentPaddingBottom
+     * ref com.zyp.cardview.R.styleable#YcCardView_contentPadding
+     * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingLeft
+     * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingTop
+     * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingRight
+     * ref com.zyp.cardview.R.styleable#YcCardView_contentPaddingBottom
      */
     public void setContentPadding(int left, int top, int right, int bottom) {
         mContentPadding.set(left, top, right, bottom);
@@ -274,7 +274,7 @@ public class YcCardView extends FrameLayout {
      * Updates the background color of the CardView
      *
      * @param color The new color to set for the card background
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardBackgroundColor
+     * ref com.zyp.cardview.R.styleable#YcCardView_cardBackgroundColor
      */
     public void setCardBackgroundColor(int color) {
         IMPL.setBackgroundColor(mCardViewDelegate, color);
@@ -320,7 +320,7 @@ public class YcCardView extends FrameLayout {
      * Updates the corner radius of the CardView.
      *
      * @param radius The radius in pixels of the corners of the rectangle shape
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardCornerRadius
+     * ref com.zyp.cardview.R.styleable#YcCardView_cardCornerRadius
      * @see #setRadius(float)
      */
     public void setRadius(float radius) {
@@ -341,7 +341,7 @@ public class YcCardView extends FrameLayout {
      * Updates the backward compatible elevation of the CardView.
      *
      * @param elevation The backward compatible elevation in pixels.
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardElevation
+     * ref com.zyp.cardview.R.styleable#YcCardView_cardElevation
      * @see #getCardElevation()
      * @see #setMaxCardElevation(float)
      */
@@ -367,7 +367,7 @@ public class YcCardView extends FrameLayout {
      * {@link #getUseCompatPadding()} is <code>false</code>.
      *
      * @param maxElevation The backward compatible maximum elevation in pixels.
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardMaxElevation
+     * ref com.zyp.cardview.R.styleable#YcCardView_cardMaxElevation
      * @see #setCardElevation(float)
      * @see #getMaxCardElevation()
      */
@@ -407,7 +407,7 @@ public class YcCardView extends FrameLayout {
      *
      * @param preventCornerOverlap Whether CardView should add extra padding to content to avoid
      *                             overlaps with the CardView corners.
-     * @attr ref android.support.v7.cardview.R.styleable#YcCardView_cardPreventCornerOverlap
+     * ref com.zyp.cardview.R.styleable#YcCardView_cardPreventCornerOverlap
      * @see #setUseCompatPadding(boolean)
      */
     public void setPreventCornerOverlap(boolean preventCornerOverlap) {
