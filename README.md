@@ -11,7 +11,7 @@ builb.gradle
 ```
 最好和官方的CardView库一起使用，不需要特殊修改阴影颜色的地方，使用官方的CardView，
 需要修改View阴影的地方才使用YcCardView
-implementation 'com.zyp.cardview:cardview:1.0.1'（暂时不可用，因为今天(2018/9/22)才Add to JCenter，应该明天会审核通过）
+implementation 'com.zyp.cardview:cardview:1.0.1'
 ```
 
 pom.xml
